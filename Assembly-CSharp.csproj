@@ -70,7 +70,9 @@
     <Compile Include="Assets\scripts\LevelEnd.cs" />
     <Compile Include="Assets\scripts\LoadNextLevel.cs" />
     <Compile Include="Assets\scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\scripts\QuitGame.cs" />
     <Compile Include="Assets\scripts\scoreDisp.cs" />
+    <Compile Include="Assets\scripts\startMenu.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -19,18 +19,23 @@ public class GameManager : MonoBehaviour
         if(!gameEnded)
         {
             gameEnded = true;
-            Invoke("startGame", restartDelay);
+            Invoke("restartGame", restartDelay);
         }
+    }
+
+    public void restartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void startGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void exitGame()
     {
         Application.Quit();
-    }
-
-    void startGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
