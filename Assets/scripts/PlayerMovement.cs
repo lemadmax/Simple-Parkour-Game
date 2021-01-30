@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -29,6 +26,10 @@ public class PlayerMovement : MonoBehaviour
         if(transform.position.y < -1.0f)
         {
             manager.endGame();
+        }
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            manager.loadFirstScene();
         }
     }
 }
